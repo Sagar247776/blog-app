@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className="max-w-7xl mx-auto">
       <Head>
-        <title>Medium Blog</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>ZSblog</title>
+        <link rel="icon" href="/FavL.png" />
       </Head>
       <Header />
       <Hero />
