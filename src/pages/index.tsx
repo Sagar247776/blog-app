@@ -1,16 +1,12 @@
-import Header from "@/components/Header/Header";
-import Head from "next/head";
-import Hero from "../container/Hero";
+import IndexLayout from "@/layout/IndexLayout";
+import Hero from "../container/index/Hero";
 
-export default function Home() {
+function Home() {
     return (
-        <div className="max-w-7xl mx-auto">
-            <Head>
-                <title>ZSblog</title>
-                <link rel="icon" href="/FavL.png" />
-            </Head>
-            <Header />
+        <>
             <Hero />
-        </div>
+        </>
     );
 }
+Home.PageLayout = IndexLayout;
+export default Home;
