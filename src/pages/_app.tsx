@@ -30,7 +30,7 @@ Router.events.on("routeChangeError", () => {
 
 const MyApp = ({ Component, pageProps }: ComponentWithPageLayout) => {
     return (
-        <ThemeProvider attribute="class" storageKey="chakra-ui-color-mode" defaultTheme="light">
+        <ThemeProvider attribute="class" storageKey="chakra-ui-color-mode" enableSystem={true}>
             <Head>
                 <meta
                     name="viewport"
