@@ -1,0 +1,13 @@
+overwrite: true
+schema: "https://blogserver123.herokuapp.com/graphql" # GraphQL endpoint via the nexus dev server
+documents: "src/app/graphql/**/*.graphql" # parse graphql operations in matching files
+generates:
+    src/app/generated/graphql.tsx: # location for generated types, hooks and components
+        plugins:
+            - "typescript"
+            - "typescript-operations"
+            - "typescript-react-apollo"
+
+        config:
+            withComponent: false # we'll use Urql client with hooks instead
+            withHooks: true

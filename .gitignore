@@ -32,6 +32,19 @@ yarn-error.log*
 
 # vercel
 .vercel
-
+.directory
 # typescript
+*.tsbuildinfo
+**/public/workbox-*.js
+**/public/sw.js
+**/public/service-worker.js
+**/public/sw.js.map
+**/public/fallback-*.js
+
+
+# sitemap
+robots.txt
+**/public/sitemap.xml
+
+# TS
 *.tsbuildinfo
